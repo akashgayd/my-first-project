@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project 2</title>
+    <link rel="stylesheet" href="index.css">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+
+<script src="https://kit.fontawesome.com/bff9bff389.js" crossorigin="anonymous"></script>
+
+
+
+
+
+
+<style>
+
+  .product_cont_info{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid black; */
+    position: relative; 
+    top: 60px;
+    justify-content: space-between;
+  }
+
+  .product_info1{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* border: 1px solid black; */
+    padding: 20px;
+  }
+
+  .product_info1 p{
+    font-size: 20px;
+    color: orange;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .product_info1 h2{
+    font-size: 28px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .product_info1 button{
+    font-size: 17px;
+    width: 70%;
+    height: 30px;
+    background-color: cadetblue;
+    border-radius: 6px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: capitalize;
+    box-shadow: 1px 2px 8px black;
+    border: none;
+  }
+  .product_info2{
+height: 15%;
+width: 20%;
+
+position: relative;
+left: 10px;
+bottom: 30px;
+box-shadow: 1px 1px 6px black;
+
+  }
+  .product_info3{
+    height: 30%;
+    width: 60%;
+   
+    box-shadow: 2px 3px 9px black;
+ 
+  }
+  .product_info4{
+    height: 15%;
+    width: 20%;
+    
+    position: relative;
+    right: 8px;
+    top: 10px;
+    box-shadow: 1px 1px 6px black;
+  }
+  .product_info5{
+    height: 16%;
+    width: 20%;
+position: relative;
+bottom: 13px;
+left: 10px;
+box-shadow: 1px 1px 6px black;
+  }
+  .product_info6{
+    height: 16%;
+    width: 20%;
+  position: relative;
+  bottom: 10px;
+  right: 10px;
+  box-shadow: 1px 1px 6px black;
+  }
+
+.multi_product_verities{
+  height: 700%;
+  width: 100%;
+  /* border: 1px solid black; */
+  position: relative;
+  top: 70px;
+  padding: 20px;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.product_name_cont{
+  height: 2%;
+  width: 100%;
+ 
+  text-align: center;
+}
+.product_name_cont h3{
+  font-family: cursive;
+  color: burlywood;
+}
+.product_name_cont p{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.product_img1{
+  height: 9%;
+  width: 100%;
+  padding: 10px;
+  /* border: 1px solid black; */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+}
+.product_img1 b{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+position: relative;
+bottom: 30px;
+}
+.product_img1 p{
+  font-size: 14px;
+  opacity: 0.8;
+  position: relative;
+  bottom: 30px;
+}
+.pr_img_hover{
+  display: none;
+}
+.product_img1:hover .pr_img_hover{
+  display: block;
+}
+.product_img1:hover .pro_block{
+  display: none;
+}
+.icon2{
+  width:80%;
+  
+  position: relative;
+  bottom: 20px;
+  align-self: center;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.457);
+  color: rgb(255, 255, 255);
+  border-radius:5px;
+  
+}
+.w1{
+  display: none;
+}
+
+
+
+.furniture_name_cont{
+  height: 200%;
+  width: 100%;
+
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  top: 90px;
+  background-color: white;
+  
+}
+.img_farni_cont{
+  height: 19%;
+  width: 96%;
+  padding: 10px;
+
+  margin: 6px;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+
+.im2{
+  display: none;
+}
+.product_watch{
+  padding: 10px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.product_watch img{
+  /* height: 30%; */
+  width: 100%;
+}
+
+
+  @media (min-width:1024px) {
+    .product_cont_info{
+      height: 140%;
+      width: 100%;
+     
+      position: relative;
+      top: 120px;
+    }
+    
+    .product_info1{
+
+      height: 20%;
+      width: 100%;
+      
+    }
+
+   
+
+
+
+    
+    .product_info1 p{
+      font-size: 25px;
+    }
+    .product_info1 h2{
+      font-size: 35px;
+      
+    }
+    .product_info1 button{
+      width: 25%;
+      height: 50px;
+      font-size: 24px;
+    }
+.w1{
+  display: block;
+}
+
+
+    .product_info2{
+      height: 24%;
+      width: 16%;
+    position: relative;
+    top: 20px;
+
+    }
+
+
+
+    .product_info2:hover{
+
+transform: matrix3d(
+1, 0, 0, 0,
+0, 1, 0, 0,
+0, 0, 1, 0,
+0, -40, 0, 1
+);
+transition-duration: 1s;
+    }
+    .product_info3{
+      height: 70%;
+      width: 60%;
+    
+
+    }
+    .product_info4{
+      height: 20%;
+      width: 16%;
+      
+    }
+
+
+
+
+    .product_info4:hover{
+
+transform: matrix3d(
+1, 0, 0, 0,
+0, 1, 0, 0,
+0, 0, 1, 0,
+0, -50, 0, 1
+);
+transition-duration: 1s;
+
+    }
+    .product_info5{
+      height: 24%;
+      width: 15%;
+     position: relative;
+     bottom: 200px;
+    }
+
+
+
+
+    .product_info5:hover{
+
+transform: matrix3d(
+1, 0, 0, 0,
+0, 1, 0, 0,
+0, 0, 1, 0,
+0, -50, 0, 1
+);
+transition-duration: 1s;}
+    .product_info6{
+      height: 30%;
+      width: 20%;
+      position: relative;
+      right: 60px;
+      bottom: 130px;
+    }
+
+
+    .product_info6:hover{
+      transition-duration: 1s;
+    
+transform: matrix3d(
+1, 0, 0, 0,
+0, 1, 0, 0,
+0, 0, 1, 0,
+0, -40, 0, 1
+)
+
+    }
+  
+.multi_product_verities{
+  height: 140%;
+  width: 100%;
+  /* border: 1px solid black; */
+  position: relative;
+  top: 500px;
+
+
+  display: flex;
+
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.product_name_cont{
+  height: 10%;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+.product_img1{
+  height: 37%;
+  width: 18%;
+  text-align: center;
+}
+
+.icon2{
+  height: 20px;
+}
+
+.furniture_name_cont{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+ 
+  padding: 20px;
+ 
+  position: relative;
+  top: 500px;
+}
+.product_chaire{
+  height: 100%;
+  width: 45%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.v2{
+  height:100%;
+width: 50%;
+
+}
+.v1{
+  height: 45%;
+  width: 45%;
+
+}
+.product_watch{
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  top: 500px;
+  padding: 20px;
+ 
+  justify-content: space-around;
+}
+.product_watch_3{
+  height: 100%;
+  width: 40%;
+  display: flex;
+  flex-wrap:wrap ;
+  justify-content: space-around;
+ 
+
+
+  }
+  .v4{
+    height: 50%;
+    width: 47%;
+  
+  }
+  .v7{
+    height: 50%;
+    width: 100%;
+    margin: 5px;
+    
+  }
+  .v5{
+    height: 100%;
+    width: 46%;
+    
+  }
+  .product_watch_3 p{
+   position: relative;
+   bottom: 240px;
+   font-size: 11px;
+   right: 90px;
+   color: rgb(255, 153, 19);
+   
+  }
+  .product_watch_3 b{
+    position: relative;
+    bottom: 240px;
+    right: 80px;
+    font-size: 12px;
+    color: rgb(255, 164, 45);
+
+  }
+ .footer_cont{
+  position: relative;
+  top: 74%;
+
+ }
+  
+}
+  </style>
+
+</head>
+<body>
+   <div class="main_cont">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="z-index: 1; width:90%; position:fixed;"> 
+        <a class="navbar-brand" href="#"><img src="assets/home.img/logo.svg" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active li1">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active li1">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item dropdown active li1">
+              <a class="nav-link dropdown-toggle" href="fashion.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Verieties
+              </a>
+              <div class="dropdown-menu bg-light text-secondary" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="fashion.html">Action</a>
+                <a class="dropdown-item" href="fashion.html">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="fashion.html">new fashion</a>
+                <a class="dropdown-item" href="fashion.html">verieties of garment</a>
+                <a class="dropdown-item" href="fashion.html">Something else new</a>
+                <a class="dropdown-item" href="fashion.html">motive</a>
+                <a class="dropdown-item" href="spekeer.html">electronic itmems</a>
+                <a class="dropdown-item" href="fashion.html">women fashion</a>
+                <a class="dropdown-item" href="fashion.html">Something else here</a>
+                
+              </div>
+            </li>
+            <li class="nav-item li1">
+              <a class="nav-link active" href="product.html">Product</a>
+            </li>
+            <li class="nav-item li1">
+                <a class="nav-link active" href="elec.html"><option value="">electronic/furniture</a>
+              </li>
+              <li class="nav-item li1">
+                <a class="nav-link active" href="primium.html">primium</a>
+              </li>
+          </ul>
+          <!-- form search -->
+          <form class="form-inline my-2 my-lg-0 ">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+              <i class="fa-solid fa-user " style="font-size: 20px;"></i>
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title btn-secondary model_title" id="exampleModalLabel">Login/Sing Up</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <!-- model body -->
+                  <div class="modal-body model_body">
+                     
+            
+                      <input class="form-control mr-sm-2" type="number" placeholder="number" aria-label="number" autofocus>
+                      <br>
+                  <br>
+                      <input class="form-control mr-sm-2" type="email" placeholder="email" aria-label="email">
+                      <br><br>
+            
+            
+                      <input class="form-control mr-sm-2" type="password" placeholder="password" aria-label="password">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">sing UP</button>
+                    <button type="button" class="btn btn-warning"  data-dismiss="modal">login</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+                     
+                    </form>
+
+
+
+        </div> 
+      </nav>
+
+
+
+
+      
+
+
+
+      <div class="product_cont_info">
+
+<section class="product_info1">
+<p>start buying today!</p>
+
+<h2>    the most populer and <br>
+  most uniqeu product is here!</h2>
+<button><a href="index.html" style="color: white;">exlpore GOYA</a></button>
+</section>
+<section class="product_info2">
+
+  <img src="assets/product.img/watch img home.jpg" width="100%" height="100%">
+</section>
+<section class="product_info3">
+  <img src="assets/product.img/main home img.webp" width="100%" height="100%">
+</section>
+<section class="product_info4">
+  <img src="assets/product.img/img3.webp" width="100%" height="100%">
+</section>
+<section class="product_info5">
+  <img src="assets/product.img/img5.png" width="100%" height="100%">
+</section>
+<section class="product_info6">
+  <img src="assets/product.img/bag.webp" width="100%" height="100%">
+</section>
+
+      </div>
+      </div>
+
+      <div class="multi_product_verities">
+
+<section class="product_name_cont">
+
+
+  <h3>Great Selection</h3>
+
+  <p>Follow the most popular trends and get
+    exclusive items from GOYA shop</p>
+</section>
+
+
+<!-- show the many fashion product  -->
+
+
+<section class="product_img1">
+ <a href="#">
+  <img class="pro_block" src="assets/product.img/fashion1-1.webp" alt="shirt" width="100%" height="90%">
+  <img src="assets/product.img/fashion1.webp" width="100%" height="90%" class="pr_img_hover">
+
+
+  <div class="icon2">
+    <i class="fa-solid fa-eye icon1"></i> <i class="fa-solid fa-cart-shopping icon1"></i>
+
+  </div></a>
+  <b>textured sweatwer</b>
+  <p>just ₹999</p>
+</section>
+<section class="product_img1">
+
+
+ <a href="#">
+ <img class="pro_block" src="assets/product.img/fashion2-2.webp" alt="shirt" width="100%" height="90%">
+
+  <img src="assets/product.img/fashion2.webp" width="100%" height="90%" class="pr_img_hover">
+
+  <div class="icon2">
+    <i class="fa-solid fa-eye icon1"></i> <i class="fa-solid fa-cart-shopping icon1"></i>
+
+
+  </div></a>
+  <b>traveller shirt</b>
+  <p>just ₹1999</p>
+</section>
+<section class="product_img1">
+
+<a href="#">
+ 
+  <img class="pro_block" src="assets/product.img/fashion3-3.webp" alt="shirt" width="100%" height="90%">
+  <img src="assets/product.img/fashion3.webp" width="100%" height="90%" class="pr_img_hover">
+
+  <div class="icon2">
+    <i class="fa-solid fa-eye icon1"></i> <i class="fa-solid fa-cart-shopping icon1"></i>
+
+
+
+  </div></a>
+  <b>checkneck swetshirt</b>
+  <p>just ₹1899</p>
+</section>
+<section class="product_img1">
+<a href="#">
+  <img class="pro_block" src="assets/product.img/fashion4-4.webp" alt="shirt" width="100%" height="90%">
+  <img src="assets/product.img/fashion4.webp" width="100%" height="90%" class="pr_img_hover">
+
+  <div class="icon2">
+    <i class="fa-solid fa-eye icon1"></i> <i class="fa-solid fa-cart-shopping icon1"></i>
+
+
+ 
+  </div></a>
+  <b>skinny trausers</b>
+  <p>just ₹3290</p>
+</section>
+<section class="product_img1">
+<a href="#">
+  <img class="pro_block" src="assets/product.img/fashion5-5.webp" alt="shirt" width="100%" height="90%">
+
+  <img src="assets/product.img/fashion5.webp" width="100%" height="90%" class="pr_img_hover">
+
+  <div class="icon2">
+    <i class="fa-solid fa-eye icon1"></i> <i class="fa-solid fa-cart-shopping icon1"></i>
+
+ 
+  </div></a>
+  <b>hight neck sweter</b>
+  <p>just ₹599</p>
+</section>
+<section class="product_img1">
+<a href="#">
+  <img class="pro_block" src="assets/product.img/fashion6-6.webp" alt="shirt" width="100%" height="90%">
+
+  <img src="assets/product.img/fashion6.webp" width="100%" height="90%" class="pr_img_hover">
+
+  <div class="icon2">
+    <i class="fa-solid fa-eye icon1"></i> <i class="fa-solid fa-cart-shopping icon1"></i>
+
+
+  </div></a>
+  <b>sleeve tshirt
+  </b>
+  <p>just ₹479</p>
+</section>
+<section class="product_img1">
+<a href="#">
+  <img class="pro_block" src="assets/product.img/fashion7-7.webp" alt="shirt" width="100%" height="90%">
+<img src="assets/product.img/fashion7.webp" width="100%" height="90%" class="pr_img_hover">
+  <div class="icon2">
+    <i class="fa-solid fa-eye icon1"></i> <i class="fa-solid fa-cart-shopping icon1"></i>
+
+
+  </div></a>
+
+  <!-- <i class="fa-solid fa-eye icon1"></i> <i class="fa-solid fa-cart-shopping icon1"></i> -->
+  <b>pocket swetshirt</b>
+  <p>just ₹4999</p>
+</section>
+<section class="product_img1">
+
+  <a href="#">
+  <img class="pro_block" src="assets/product.img/fashion8-8.webp" alt="shirt" width="100%" height="90%">
+
+  <img src="assets/product.img/fashion8.webp" width="100%" height="90%" class="pr_img_hover">
+
+  <div class="icon2">
+    <i class="fa-solid fa-eye icon1"></i> <i class="fa-solid fa-cart-shopping icon1"></i>
+
+  
+  </div></a>
+  <b>top with pleated</b>
+  <p>just ₹1299</p>
+</section>
+<section class="product_img1">
+<a href="#">
+  <img class="pro_block" src="assets/product.img/fashion9-9.webp" alt="shirt" width="100%" height="90%">
+
+  <img src="assets/product.img/fashion9.webp" width="100%" height="90%" class="pr_img_hover">
+
+  <div class="icon2">
+    <i class="fa-solid fa-eye icon1"></i> <i class="fa-solid fa-cart-shopping icon1"></i>
+
+
+  </div></a>
+  <b>cotton sweatwer</b>
+  <p>just ₹1999</p>
+</section>
+<section class="product_img1">
+<a href="#">
+  <img class="pro_block" src="assets/product.img/fashion10-10.webp" alt="shirt" width="100%" height="90%">
+  <img src="assets/product.img/fahion10.webp" width="100%" height="90%" class="pr_img_hover">
+<div class="icon2">
+  <i class="fa-solid fa-eye icon1"></i> <i class="fa-solid fa-cart-shopping icon1"></i>
+
+ 
+
+</div></a>
+  <b>tecture plane reguler</b>
+  <p>just ₹1999</p>
+</section>
+
+
+
+
+      </div>
+
+
+      <div class="furniture_name_cont">
+
+        <section class="img_farni_cont v2">
+         <a href="elec.html"> <img src="assets/product.img/furniture-home-1.webp" width="100%" height="100%">
+          </a>
+        </section>
+        <div class="product_chaire">
+        <section class="img_farni_cont v1">
+
+          <a href="elec.html">  <img src="assets/product.img/furniture-2.webp" width="100%" height="90%"></a>
+          <b>negus living chire</b>
+          <p>₹ 5,999</p>
+        </section>
+        <section class="img_farni_cont v1">
+          <a href="elec.html">   <img src="assets/product.img/fur4.webp" width="100%" height="90%"></a>
+          <b>wood small tool</b>
+          <p>₹ 1,999</p>
+        </section>
+        <section class="img_farni_cont v1">
+
+          <a href="elec.html">   <img src="assets/product.img/furniture 5.webp" width="100%" height="90%">
+            </a>
+          <b>wooden bar tool</b>
+          <p>₹ 1299</p>
+        </section>
+        <section class="img_farni_cont v1 w1">
+        
+          <a href="elec.html">   <img src="assets/product.img/furniture 3.webp" width="100%" height="90%"></a>
+          <b>decks classroom</b>
+          <p>₹ 5,999</p>
+        </div>
+        </section>
+      </div>
+
+      <div class="product_watch">
+<div class="product_watch_3">
+<section class="product_watch1 v4">
+<a href="primium.html"> <img class="im1" src="assets/product.img/watch-home-best-2-2.webp" alt="" width="90%" height="90%">
+
+
+<b>classic broun lether</b>
+<p>₹4,599</p>
+</section>
+
+
+
+<section class="product_watch1 v4">
+
+  <a href="primium.html">
+  <img class="im1" src="assets/product.img/watch-home-best-3-3.webp" alt="" width="90%" height="90%">
+
+
+
+  </a>
+  <b>classic coronda </b>
+  <p>₹4,199</p>
+ </section>
+
+
+<section class="product_watch1  v7">
+ 
+  <a href="primium.html">
+  <img class="im1" src="assets/product.img/watch-home-best-4-4.webp" alt="" width="90%" height="90%">
+
+
+
+</a>
+<b>royal broun era</b>
+<p>₹6,599</p>
+</section>
+
+</div>
+<section class="product_watch1 v5">
+  <a href="primium.html">
+
+  <img  src="assets/product.img/watch-home-best-2-2.webp" alt="" width="90%" height="95%">
+
+</a>
+<b>brand royal primium</b>
+<p>₹9,599</p>
+</section>
+
+
+
+
+
+
+      </div>
+
+
+
+      <div class="footer_cont" style="background: linear-gradient(to top, rgb(88, 219, 255),white);">
+
+        <section class="footer_cont1">
+          <h2>want to partner with us ?</h2>
+          <p>if you have intrested in our partnership and would like find out some more information.</p>
+          <p> one of our adviser in exited in our help.</p>
+      
+          <button class="button btn btn-warning btn-lg"><a href="#">Get Started</a></button>
+        </section>
+        <img class="fot_img" src="assets/home.img/logo.svg" width="100px">
+        <section class="footer_cont2">
+      
+      <img src="assets/home.img/logo.svg" width="10%">
+      
+      <ul>
+        <p>
+          partnership
+        </p>
+        <li>
+          <a href="#">website</a>
+        </li>
+        <li>
+          <a href="#">social meadia</a>
+        </li>
+        <li>
+          <a href="#">branding</a>
+        </li>
+      </ul>
+      
+      
+      
+      
+      <ul>
+        <p>
+          partnership
+        </p>
+        <li>
+          <a href="#">website</a>
+        </li>
+        <li>
+          <a href="#">social meadia</a>
+        </li>
+        <li>
+          <a href="#">branding</a>
+        </li>
+      </ul>
+      
+      
+      
+      
+      <ul>
+        <p>
+          partnership
+        </p>
+        <li>
+          <a href="#">website</a>
+        </li>
+        <li>
+          <a href="#">social meadia</a>
+        </li>
+        <li>
+          <a href="#">branding</a>
+        </li>
+      </ul>
+      <ul class="fot_ul">
+        <p>
+          follow us
+        </p>
+        <li>
+          <i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-twitter"></i> <i class="fa-brands fa-linkedin"></i> <i class="fa-brands fa-instagram"></i>
+        </li>
+      </ul>
+      
+        </section>
+        <img src="assets/home.img/payment-method.svg" width="30%">
+      </div>
+      </body>
+      </html>

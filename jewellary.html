@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project 2</title>
+    <link rel="stylesheet" href="index.css">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+
+<script src="https://kit.fontawesome.com/bff9bff389.js" crossorigin="anonymous"></script>
+
+
+
+
+
+
+<style>
+
+   nav img{
+    width: 100px;
+   }
+.about_comp_cont{
+    height: 100%;
+    width: 100%;
+  padding: 10px;
+   /* border: 1px solid rgb(186, 186, 186); */
+   position: relative;
+   top: 40px;
+   background-color: rgba(248, 247, 247, 0.411);
+
+}
+.about_cont1{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    padding: 10px;
+  
+}
+.about_cont2{
+    height: 60%;
+    width: 100%;
+    /* border: 1px solid black; */
+  
+}
+
+.about_box{
+    height: 70%;
+    width: 100%;
+    padding: 5px;
+    border-left: 5px solid black;
+}
+.about_cont1 h1{
+    font-family: monospace;
+    font-size: 40px;
+
+    }
+    .about_box p{
+        text-align: justify;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: justify;
+    }
+    .indrustry_standard_info{
+        height: 110%;
+        width: 100%;
+        /* border: 1px solid black; */
+       background-color: aliceblue;
+        padding: 20px;
+    }
+
+
+
+    .indrustry_standard_info1{
+        height: 50%;
+        width:100% ;
+        /* border: 1px solid black;
+      */
+    }
+.indrustry_standard_info2{
+    height:50%;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 10px;
+   
+
+}
+.indrustry_standard_info2 small{
+color: rgb(241, 183, 75);
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 20px;
+font-weight: 400;
+
+}
+.indrustry_standard_info2 h2{
+    font-size: 31px;
+    font-family: cursive;
+}
+.indrustry_standard_info2 p{
+    font-size: 14px;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     opacity: 0.7;
+}
+.indrustry_standard_info2 h1{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(43, 33, 43);
+}
+.about_story_cont{
+    height: 140%;
+    width: 100%;
+    padding: 15px;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: linear-gradient(to bottom,rgb(251, 240, 240),rgb(252, 252, 252));
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.core_menu1{
+    height: 16%;
+    width: 100%;
+    text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 15px;
+}
+.core_menu2{
+    height: 25%;
+    width: 100%;
+    padding: 20px;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.core_menu1 small{
+color:rgb(231, 156, 35) ;
+font-size: 23px;
+
+}
+.core_menu2 p{
+    font-size: 20px;
+}
+
+
+
+
+
+    @media (min-width:1024px) {
+        .about_comp_cont{
+            display: flex;
+            flex-direction: row;
+            padding: 15px;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(247, 247, 247, 0.703);
+          position: relative;
+          top: 100px;
+        }
+        .about_cont1{
+            height:100%;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 1px solid black;
+            */
+
+        }
+        .about_box{
+            height: 20%;
+            width: 60%;
+           border-left: 5px solid black;
+            text-align: center;
+            font-size: 20px;
+            opacity: 0.7;
+          
+        }
+        
+    
+        .about_cont2{
+            height: 100%;
+            width: 50%;
+            /* border: 1px solid black; */
+      
+    }
+    .indrustry_standard_info{
+        height: 120%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+    }
+    .indrustry_standard_info1{
+        height: 100%;
+        width: 60%;
+        padding: 30px;
+
+    }
+    .indrustry_standard_info2{
+        height: 100%;
+        width: 40%;
+        padding: 20px;
+    }
+    .indrustry_standard_info2 h2{
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      line-height: 100px;
+     
+    }
+    .indrustry_standard_info2 p{
+        font-size: 16px;
+        
+    }
+    .indrustry_standard_info2 h1{
+        font-size: 50px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        opacity: 0.8;
+    }
+    .about_story_cont{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        height: 70%;
+       
+    }
+    .core_menu1{
+        height: 40%;
+        width: 100%;
+       
+        opacity: 0.6;
+    }
+    .core_menu2{
+        height: 50%;
+        width: 23%;
+       
+
+    }
+    .core_menu1 small{
+        font-size: 18px;
+        opacity: 0.8;
+    }
+    .core_menu1 p{
+        font-size: 20px;
+    }
+    .core_menu2 p{
+        font-size: 28px;
+        opacity: 0.6;
+    }
+    .core_menu2 small{
+        font-size: 17px;
+    }
+}
+</style>
+
+
+
+
+
+</head>
+<body>
+   <div class="main_cont">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="z-index: 1; width: 100%; position: fixed;"> 
+        <a class="navbar-brand" href="#"><img src="assets/home.img/logo.svg" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active li1">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active li1">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item dropdown active li1">
+              <a class="nav-link dropdown-toggle" href="fashion.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Verieties
+              </a>
+              <div class="dropdown-menu bg-light text-secondary" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="fashion.html">Action</a>
+                <a class="dropdown-item" href="fashion.html">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="fashion.html">new fashion</a>
+                <a class="dropdown-item" href="fashion.html">verieties of garment</a>
+                <a class="dropdown-item" href="fashion.html">Something else new</a>
+                <a class="dropdown-item" href="fashion.html">motive</a>
+                <a class="dropdown-item" href="spekeer.html">electronic itmems</a>
+                <a class="dropdown-item" href="fashion.html">women fashion</a>
+                <a class="dropdown-item" href="fashion.html">Something else here</a>
+                
+              </div>
+            </li>
+            <li class="nav-item li1">
+              <a class="nav-link active" href="product.html">Product</a>
+            </li>
+            <li class="nav-item li1">
+                <a class="nav-link active" href="elec.html"><option value="">electronic/furniture</a>
+              </li>
+              <li class="nav-item li1">
+                <a class="nav-link active" href="primium.html">primium</a>
+              </li>
+          </ul>
+          <!-- form search -->
+          <form class="form-inline my-2 my-lg-0 ">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+
+
+            <!-- Button trigger modal -->
+<button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+    <i class="fa-solid fa-user " style="font-size: 20px; position: relative; left: 10px;"></i>
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title btn-secondary model_title" id="exampleModalLabel">Login/Sing Up</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!-- model body -->
+        <div class="modal-body model_body">
+           
+
+            <input class="form-control mr-sm-2" type="number" placeholder="number" aria-label="number" autofocus>
+            <br>
+        <br>
+            <input class="form-control mr-sm-2" type="email" placeholder="email" aria-label="email">
+            <br><br>
+
+
+            <input class="form-control mr-sm-2" type="password" placeholder="password" aria-label="password">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">sing UP</button>
+          <button type="button" class="btn btn-warning"  data-dismiss="modal">login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+           
+          </form>
+        </div>
+      </nav>
+      </div>
+    </body>
+      </html>
