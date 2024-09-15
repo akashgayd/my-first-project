@@ -49,7 +49,7 @@ html,body{
     padding: 10px;
 }
 .slide_cont_child{
-    height: 80%;
+    /* height: 80%; */
     width: 100%;
     /* border: 1px solid black; */
 }
